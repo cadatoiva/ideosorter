@@ -8,7 +8,7 @@ export default {
         text: i18n.btn_classnation,
         bgcolor: "#821212",
         textcolor: "#fff"
-    }
+    },
     conditional: {
         text: i18n.btn_conditional,
         bgcolor: "#50e024",
