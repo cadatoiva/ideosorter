@@ -6,14 +6,14 @@ const results = Object.values(questions)
 
 const langDropdown = document.getElementById("langDropdown")
 
-langDropdown.addEventListener("change", ()=> {
-    location.href = `index.html?${langDropdown.value}`
-})
+//langDropdown.addEventListener("change", ()=> {
+//    location.href = `index.html?${langDropdown.value}`
+//})
 
-i18n.$l10nLangs.forEach(lang => {
-    const selected = lang === i18n.$lang
-    langDropdown.innerHTML += `<option value="${lang}" ${selected&&"selected"}>${i18n.$l10nData[lang].lang_name}</option>`
-})
+//i18n.$l10nLangs.forEach(lang => {
+//    const selected = lang === i18n.$lang
+//    langDropdown.innerHTML += `<option value="${lang}" ${selected&&"selected"}>${i18n.$l10nData[lang].lang_name}</option>`
+//})
 
 document.getElementById("title").innerHTML = i18n.ui_index_title
 document.getElementById("text_body").innerHTML = i18n.ui_index_text
