@@ -9,6 +9,11 @@ export default {
         bgcolor: "#821212",
         textcolor: "#fff"
     },
+    collective: {
+        text: i18n.btn_collective,
+        bgcolor: "#e3144f",
+        textcolor: "#000"
+    },
     conditional: {
         text: i18n.btn_conditional,
         bgcolor: "#50e024",
@@ -27,6 +32,11 @@ export default {
     electoralism: {
         text: i18n.btn_electoralism,
         bgcolor: "#c47112",
+        textcolor: "#000"
+    },
+    individual: {
+        text: i18n.btn_individual,
+        bgcolor: "#f0cb11",
         textcolor: "#000"
     },
     no: {
