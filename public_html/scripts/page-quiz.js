@@ -27,7 +27,7 @@ window.prev_question = function prev_question(){
 function init_question() {
     document.getElementById("question").innerHTML = questions[questionId]["question"]
     const buttonHolder = document.getElementById("buttonholder")
-    while (buttonHolder.firstChild) buttonHolder.firstChild.remove()
+    buttonHolder.replaceChildren();
     let answers = questions[questionId].answers
     for(let i = 0; i<answers.length; i++) {
         let button = buttons[answers[i]]

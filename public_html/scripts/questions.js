@@ -2,13 +2,13 @@ export default {
     private_property: {
         question: i18n.question_private_property,
         answers: [
-            "yes",
-            "no"
+            "individual",
+            "collective"
         ],
         results: {},
         nextquestion: {
-            "yes": "theo",
-            "no": "market"
+            "individual": "theo",
+            "collective": "market"
         }
     },
     theo: {
@@ -503,7 +503,7 @@ export default {
         }
     },
     synd1: {
-        question: i18n.question_synd1,
+        question: i18n.question_union,
         answers: [
             "yes",
             "no"
@@ -566,7 +566,7 @@ export default {
         }
     },
     synd2: {
-        question: i18n.question_synd2,
+        question: i18n.question_union,
         answers: [
             "yes",
             "no"
@@ -667,7 +667,7 @@ export default {
         }
     },
     synd3: {
-        question: i18n.question_synd3,
+        question: i18n.question_union,
         answers: [
             "yes",
             "no"
