@@ -10,7 +10,25 @@ function next_question(sel) {
         questionId = questions[questionId].nextquestion[sel]
         init_question()
     } else {
-        location.href = `results.html?${i18n.$lang}&${questions[questionId].results[sel]}`
+        const form = document.createElement('form');
+        form.method = 'post';
+        form.action = 'results.php';
+
+        let hiddenField = document.createElement('input');
+        hiddenField.type = 'hidden';
+        hiddenField.name = 'ideo';
+        hiddenField.value = questions[questionId].results[sel];
+        form.appendChild(hiddenField);
+        
+        hiddenField = document.createElement('input');
+        hiddenField.type = 'hidden';
+        hiddenField.name = 'replay';
+        hiddenField.value = Math.floor(Math.random() * Number.MAX_SAFE_INTEGER);
+        form.appendChild(hiddenField);
+        
+        document.body.appendChild(form);
+        form.submit();
+        //location.href = `results.html?${i18n.$lang}&${questions[questionId].results[sel]}`
     }
 }
 
