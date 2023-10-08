@@ -1,6 +1,6 @@
 import { loadL10n } from "./i18n.js"
 
-const currentPage = document.location.href.replace(/.*\/|(\.html|\?).*/g, '') || 'index'
+const currentPage = document.location.href.replace(/.*\/|(\.html|\?|\.php).*/g, '') || 'index'
 
 const loadingEl = document.createElement('div')
 loadingEl.id = 'loading'
