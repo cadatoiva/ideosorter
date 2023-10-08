@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php
-    include('../config.php');
+    include_once('../.config.php');
     function random_string($length) {
         $str = random_bytes($length);
         $str = base64_encode($str);
