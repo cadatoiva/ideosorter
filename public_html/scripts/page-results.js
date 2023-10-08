@@ -1,5 +1,3 @@
-const ideo = window.location.search.split("&")[1]
-
 function throw404(){
     let lottieScript = document.createElement("script")
     lottieScript.setAttribute("src", "https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js")

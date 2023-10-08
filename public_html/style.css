@@ -101,7 +101,7 @@ button {
     height: auto;
     border-radius: 2em;
 }
-#result {
+#result, #code {
     font-size: 3em;
     width: 75%;
     margin: auto;
