@@ -58,9 +58,7 @@
         Your code is <?php echo $code; ?><br/>
         Please use the command /quiz in the discord to activate your account.
     </div>
-    <!-- doesn't work in http
     <button id="copy" class="large-button" onclick="navigator.clipboard.writeText('/quiz <?php echo $code; ?>');">Copy command to clipboard</button>
-    -->
     <button id="indexbutton" class="large-button"></button>
     <button id="creditsbutton" class="large-button" onclick="location.href = 'credits.html';"></button>
 </body>
